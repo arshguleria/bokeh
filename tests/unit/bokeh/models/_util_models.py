@@ -41,6 +41,11 @@ LINE  = ["line_color", "line_width", "line_alpha", "line_join", "line_cap", "lin
 TEXT  = ["text_font", "text_font_size", "text_font_style", "text_color", "text_outline_color",
          "text_alpha", "text_align", "text_baseline", "text_line_height"]
 
+HOVER_FILL  = [ f"hover_{name}" for name in FILL ]
+HOVER_HATCH = [ f"hover_{name}" for name in HATCH ]
+HOVER_LINE  = [ f"hover_{name}" for name in LINE ]
+HOVER_TEXT  = [ f"hover_{name}" for name in TEXT ]
+
 ANGLE = ["angle", "angle_units"]
 
 PROPS = ["name", "tags", "js_property_callbacks", "js_event_callbacks", "subscribed_events", "syncable"]
